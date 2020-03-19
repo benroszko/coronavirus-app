@@ -1,0 +1,29 @@
+# System Files
+.DS_Store
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+/out
+.project
+.classpath
+.c9/
+
+#java jar
+*.jar
+
+# spring boot
+.settings
+.springBeans
+bin/
+build/
+
+# e2e
+/e2e/*
