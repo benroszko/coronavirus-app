@@ -1,0 +1,11 @@
+<h1 class="display-3 corona-header">Coronavirus App</h1>
+
+<div class="form-group">
+  <input type="text"
+         class="form-control corona-input"
+         id="country"
+         name="country"
+         placeholder="Enter name of country.."
+         [(ngModel)]="countryInput" (keydown)="onKeydown($event)">
+</div>
+<button type="submit" class="btn btn-primary corona-btn" (click)="onSubmit()">Submit</button>

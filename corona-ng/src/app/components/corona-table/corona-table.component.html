@@ -1,0 +1,23 @@
+<div class="container">
+  <table class="table table-striped table-hover" [ngClass]="{'table-responsive': innerWidth < 550}" [hidden]="!coronaCountries.length">
+    <thead class="thead-dark">
+      <tr>
+        <th *ngFor="let column of columns" scope="col">
+          {{ column.colName }} <fa-icon class="sortable"
+                                        [icon]="faSort"
+                                        (click)="this.sort(column)"></fa-icon>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let country of coronaCountries">
+        <th scope="row">{{ country.country }}</th>
+        <td>{{ country.cases }}</td>
+        <td>{{ country.todayCases }}</td>
+        <td>{{ country.deaths }}</td>
+        <td>{{ country.todayDeaths }}</td>
+        <td>{{ country.recovered }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
