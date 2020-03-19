@@ -1,29 +1,45 @@
 # System Files
-.DS_Store
+*.DS_Store
 
 # compiled output
-/dist
-/tmp
-/out-tsc
+*/dist
+*/tmp
 
 # dependencies
-/node_modules
+*/node_modules
 
 # IDEs and editors
-/.idea
-/out
-.project
-.classpath
-.c9/
-
-#java jar
-*.jar
-
-# spring boot
-.settings
-.springBeans
-bin/
-build/
+*/.idea
+*/out
+*.project
+*.classpath
+*.c9/
 
 # e2e
-/e2e/*
+*/e2e/
+
+### STS ###
+*.apt_generated
+*.classpath
+*.factorypath
+*.project
+*.settings
+*.springBeans
+*.sts4-cache
+*HELP.md
+*target
+
+### IntelliJ IDEA ###
+*.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+*/nbproject/private/
+*/nbbuild/
+*/dist/
+*/nbdist/
+*/.nb-gradle/
+*build/
+
